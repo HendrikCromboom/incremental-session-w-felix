@@ -1,8 +1,11 @@
 body{
     background-color: black;
+    color: white;
 }
 #text{
     text-align: center;
+    width: 40px;
+    color: red;
 }
 #altar{
     height: 100px;
