@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+#text{
+    text-align: center;
+}
+#altar{
+    height: 100px;
+    width: 100px;
+}
