@@ -4,11 +4,13 @@ function update(){
     document.getElementById("amountAcolytes").innerHTML = "There are" + acolytes + "Acolytes in your covent";
     document.getElementById("costRecruitAcolyte").innerHTML = ((acolytes + 1) *12) + "Souls";
     document.getElementById("amountElders").innerHTML = "There are" + elders + "Elders in your covent";
-    document.getElementById("costRecruitElders").innerHTML = ((elders + 1) *120) + "Souls";
+    document.getElementById("costRecruitElder").innerHTML = ((elders + 1) *120) + "Souls";
+    document.getElementById("s").innerHTML = "Your covent is harvesting" + (((acolytes)+(elders*2))*multiplier) + "souls per second";
 }
+var multiplier = 1;
 var soulcount = 0;
 var acolytes = 0;
-var elders= 0;
+var elders = 0;
 function timer(){
     soulcount = soulcount + acolytes;
     soulcount = soulcount + elders *2;
@@ -35,7 +37,7 @@ function recruitElder(){
     }
 }
 function save(){
-    localStorage.setItem("Sicko", "Cheater")
+    localStorage.setItem("Sicko", "Cheater");
     localStorage.setItem("soulcount", soulcount);
     localStorage.setItem("acolytes", acolytes);
     localStorage.setItem("elders", elders);
