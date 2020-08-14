@@ -47,6 +47,7 @@ function recruitAncient(){
         update();
     }
 }
+//Save and load
 function save(){
     localStorage.setItem("Sicko", "Cheater");
     localStorage.setItem("soulcount", soulcount);

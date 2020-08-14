@@ -26,3 +26,11 @@ body{
     height: 100px;
     width: 100px;
 }
+#click-container-text{
+    border: red 1px solid;
+    padding: 5%;
+}
+#click-container-answer{
+    border: red 1px solid;
+    padding: 5%;
+}
