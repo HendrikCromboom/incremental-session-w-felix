@@ -2,6 +2,21 @@ body{
     background-color: black;
     color: white;
 }
+.click-container{
+    border: red 1px solid;
+    padding: 5%;
+}
+.buy-container{
+    border: red 1px solid;
+    padding: 5%;
+}
+.save-container{
+    border: red 1px solid;
+    padding: 5%;
+}
+.outer-container{
+    display: flex;
+}
 #text{
     text-align: center;
     width: 40px;

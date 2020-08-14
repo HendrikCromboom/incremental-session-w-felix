@@ -26,6 +26,12 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 ---
 
+14 aug 2020 init0.003
+* Added third placeholder upgrade "Ancients"
+* Updated the placeholder UI with some flexboxes
+
+---
+
 
 14 aug 2020 init0.002
 * Added second placeholder upgrade "Elder"
