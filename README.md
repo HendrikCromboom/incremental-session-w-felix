@@ -24,6 +24,16 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 #### Changelog
 
+15 aug 2020 init0.005
+* Added autoloading of gamestate
+* Added a gamestate that defines progress
+
+---
+
+14 aug 2020 init0.004
+* Added a simple intro scene
+* Game is now split up in two pages
+
 ---
 
 14 aug 2020 init0.003
