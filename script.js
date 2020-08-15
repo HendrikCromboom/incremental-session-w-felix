@@ -54,6 +54,7 @@ function save(){
     localStorage.setItem("acolytes", acolytes);
     localStorage.setItem("elders", elders);
     localStorage.setItem("ancients", ancients);
+    localStorage.setItem("gamestate", gamestate);
 }
 function load(){
     soulcount = localStorage.getItem("soulcount");
@@ -64,5 +65,7 @@ function load(){
     elders = parseInt(elders);
     ancients = localStorage.getItem("ancients");
     ancients = parseInt(ancients);
+    gamestate = localStorage.getItem("gamestate");
+    gamestate = parseInt(gamestate);
     update();
 }
