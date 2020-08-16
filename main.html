@@ -19,26 +19,39 @@
             souls.</p>
         </div>
         <div class="buy-container">
-            <br><br>
-            <p>
-            <button><a href="#" onclick="recruitAcolyte()">Recruit</a></button>
-            1 Acolyte, for
-                <span id="costRecruitAcolyte">12 Souls</span></p>
-            <p id="amountAcolytes">There are 0 Acolytes in your covent</p>
-            <br><br>
-            <p>
-            <button><a href="#" onclick="recruitElder()">Recruit</a></button>
-            1 Elder, for
-            <span id="costRecruitElder">120 Souls</span>
-            <p id="amountElders">There are 0 Elder in your covent</p>
-            <br>
-            <br><br>
-            <p>
-            <button><a href="#" onclick="recruitAncient()">Recruit</a></button>
-            1 Ancient, for
-            <span id="costRecruitAncient">1200 Souls</span>
-            <p id="amountAncients">There are 0 Ancients in your covent</p>
-            <br>
+            <button class="tablink" onclick="openPage('recruit')">Recruit</button>
+
+            <button class="tablink" onclick="openPage('upgrades')" id="defaultOpen">Upgrades</button>
+
+            <button class="tablink" onclick="openPage('stats')">Stats</button>
+            <div class="tabcontent" id="recruit">
+                <br><br>
+                <p>
+                <button><a href="#" onclick="recruitAcolyte()">Recruit</a></button>
+                1 Acolyte, for
+                    <span id="costRecruitAcolyte">12 Souls</span></p>
+                <p id="amountAcolytes">There are 0 Acolytes in your covent</p>
+                <br><br>
+                <p>
+                <button><a href="#" onclick="recruitElder()">Recruit</a></button>
+                1 Elder, for
+                <span id="costRecruitElder">120 Souls</span>
+                <p id="amountElders">There are 0 Elder in your covent</p>
+                <br>
+                <br><br>
+                <p>
+                <button><a href="#" onclick="recruitAncient()">Recruit</a></button>
+                1 Ancient, for
+                <span id="costRecruitAncient">1200 Souls</span>
+                <p id="amountAncients">There are 0 Ancients in your covent</p>
+                <br>
+            </div>
+            <div class="tabcontent" id="upgrades">
+            Upgrades go here
+            </div>
+            <div class="tabcontent" id="stats">
+            Stats go here
+            </div>
         </div>
         <div class="save-container">
             <button><a href="#" onclick="save()">Save</a></button>

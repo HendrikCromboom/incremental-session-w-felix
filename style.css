@@ -2,6 +2,11 @@ body{
     background-color: black;
     color: white;
 }
+button{
+    background-color: black;
+    color: white;
+    border: red 1px solid;
+}
 .click-container{
     border: red 1px solid;
     padding: 5%;
@@ -33,4 +38,10 @@ body{
 #click-container-answer{
     border: red 1px solid;
     padding: 5%;
+}
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px 2px;
+    height: 100%;
 }
