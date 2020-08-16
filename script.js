@@ -7,6 +7,8 @@ function update(){
     document.getElementById("costRecruitElder").innerHTML = ((elders + 1) *120) + " Souls";
     document.getElementById("amountAncients").innerHTML = "There are " + ancients + " Ancients in your covent";
     document.getElementById("costRecruitAncient").innerHTML = ((ancients + 1) *1200) + " Souls";
+    document.getElementById("amountSacrifice").innerHTML = "Your sacrificial power is " + sacrifice;
+    document.getElementById("costUpgradeSacrifice").innerHTML = ((sacrifice + 1) *10000) + " Souls";
     document.getElementById("s").innerHTML = "Your covent is harvesting " + (((acolytes)+(elders*2)+(ancients*5))*multiplier) + " souls per second";
 }
 var multiplier = 1;
@@ -14,6 +16,7 @@ var soulcount = 0;
 var acolytes = 0;
 var elders = 0;
 var ancients = 0;
+var sacrifice = 1;
 function timer(){
     soulcount = soulcount + acolytes;
     soulcount = soulcount + elders *2;
@@ -22,7 +25,7 @@ function timer(){
 }
 setInterval(timer, 1000)
 function add() {
-soulcount = soulcount + 1;
+soulcount = soulcount + (1*sacrifice);
 update();
 
 }
@@ -47,6 +50,13 @@ function recruitAncient(){
         update();
     }
 }
+function upgradeSacrifice(){
+    if (soulcount >= ((sacrifice + 1) *10000)){
+        soulcount = soulcount - ((sacrifice + 1) *10000);
+        sacrifice = sacrifice + 1;
+        update();
+    }
+}
 //Save and load
 function save(){
     localStorage.setItem("Sicko", "Cheater");
@@ -54,6 +64,7 @@ function save(){
     localStorage.setItem("acolytes", acolytes);
     localStorage.setItem("elders", elders);
     localStorage.setItem("ancients", ancients);
+    localStorage.setItem("sacrifice", sacrifice);
 }
 function load(){
     soulcount = localStorage.getItem("soulcount");
@@ -64,9 +75,11 @@ function load(){
     elders = parseInt(elders);
     ancients = localStorage.getItem("ancients");
     ancients = parseInt(ancients);
+    sacrifice = localStorage.getItem("sacrifice");
+    sacrifice = parseInt(sacrifice);
     gamestate = localStorage.getItem("gamestate");
     gamestate = parseInt(gamestate);
-    localStorage.clear();
+
     update();
 }
 function reset(){
@@ -86,4 +99,3 @@ function openPage(pageName,elmnt,color) {
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
 }
-document.getElementById("defaultOpen").click();

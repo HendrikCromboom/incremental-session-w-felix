@@ -9,23 +9,30 @@ button{
 }
 .click-container{
     border: red 1px solid;
+    color: white;
     padding: 5%;
 }
 .buy-container{
     border: red 1px solid;
+    color: white;
     padding: 5%;
 }
 .save-container{
     border: red 1px solid;
     padding: 5%;
+    color: white;
+
 }
 .outer-container{
     display: flex;
+    color: white;
+
 }
 #text{
     text-align: center;
     width: 40px;
-    color: red;
+    color: white;
+
 }
 #altar{
     height: 100px;
@@ -34,14 +41,21 @@ button{
 #click-container-text{
     border: red 1px solid;
     padding: 5%;
+    color: white;
+
 }
 #click-container-answer{
     border: red 1px solid;
     padding: 5%;
+    color: white;
+
 }
 .tabcontent {
     color: white;
     display: none;
     padding: 50px 2px;
     height: 100%;
+}
+.white{
+    color: white;
 }
