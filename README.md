@@ -24,6 +24,14 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 #### Changelog
 
+16 aug 2020 init0.006
+* Added a navbar
+* Added an upgrade tab
+* Added a stat tab
+* Added a clicker upgrade "Sacrificial Power"
+
+---
+
 15 aug 2020 init0.005
 * Added autoloading of gamestate
 * Added a gamestate that defines progress
