@@ -26,6 +26,11 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 18 aug 2020 init0.008
 
+* Added a total souls stat
+* Added a total clicks stat
+* Added a lifetime stat
+* These stats are fun to look at and will be usefull for prestige etc
+
 ---
 
 17 aug 2020 init0.007
