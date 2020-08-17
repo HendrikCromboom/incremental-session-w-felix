@@ -24,11 +24,23 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 #### Changelog
 
+18 aug 2020 init0.008
+
+---
+
+17 aug 2020 init0.007
+
+* Remade autoload to a selfcalling function
+* Added reset button
+
+---
+
 16 aug 2020 init0.006
 * Added a navbar
 * Added an upgrade tab
 * Added a stat tab
 * Added a clicker upgrade "Sacrificial Power"
+
 
 ---
 

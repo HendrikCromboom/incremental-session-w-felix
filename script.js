@@ -10,6 +10,9 @@ function update(){
     document.getElementById("amountSacrifice").innerHTML = "Your sacrificial power is " + sacrifice;
     document.getElementById("costUpgradeSacrifice").innerHTML = ((sacrifice + 1) *10000) + " Souls";
     document.getElementById("s").innerHTML = "Your covent is harvesting " + (((acolytes)+(elders*2)+(ancients*5))*multiplier) + " souls per second";
+    document.getElementById("amountTotalLifeSoulCount").innerHTML = "During this life you have collected " + totallifesoulcount + " souls!";
+    document.getElementById("amountClicks").innerHTML = "During this life you have clicked " + clicks + " times!";
+    document.getElementById("amountLifeTime").innerHTML = "You have suffered this life for " + lifetime + " relative time units...";
 }
 var multiplier = 1;
 var soulcount = 0;
@@ -17,15 +20,25 @@ var acolytes = 0;
 var elders = 0;
 var ancients = 0;
 var sacrifice = 1;
+var totallifesoulcount = 0;
+var clicks = 0;
+var lifetime = 0;
+
 function timer(){
     soulcount = soulcount + acolytes;
     soulcount = soulcount + elders *2;
     soulcount = soulcount + ancients *5;
+    totallifesoulcount = totallifesoulcount + acolytes;
+    totallifesoulcount = totallifesoulcount + elders *2;
+    totallifesoulcount = totallifesoulcount + ancients *5;
+    lifetime = lifetime + 1;
     update()
 }
 setInterval(timer, 1000)
 function add() {
 soulcount = soulcount + (1*sacrifice);
+totallifesoulcount = totallifesoulcount + (1*sacrifice);
+clicks = clicks + 1;
 update();
 
 }
@@ -65,6 +78,9 @@ function save(){
     localStorage.setItem("elders", elders);
     localStorage.setItem("ancients", ancients);
     localStorage.setItem("sacrifice", sacrifice);
+    localStorage.setItem("totallifesoulcount", totallifesoulcount);
+    localStorage.setItem("clicks", clicks);
+    localStorage.setItem("lifetime", lifetime);
 }
 function load(){
     soulcount = localStorage.getItem("soulcount");
@@ -79,7 +95,12 @@ function load(){
     sacrifice = parseInt(sacrifice);
     gamestate = localStorage.getItem("gamestate");
     gamestate = parseInt(gamestate);
-
+    totallifesoulcount = localStorage.getItem("totallifesoulcount");
+    totallifesoulcount = parseInt(totallifesoulcount);
+    clicks = localStorage.getItem("clicks");
+    clicks = parseInt(clicks);
+    lifetime = localStorage.getItem("lifetime");
+    lifetime = parseInt(lifetime);
     update();
 }
 function reset(){
