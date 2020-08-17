@@ -1,14 +1,9 @@
 //Navigation
 var gamestate = 1;
 
-if (gamestate>0){
-    gamestate = localStorage.getItem("gamestate");
-    gamestate = parseInt(gamestate);
-}
 if (gamestate > 1){
     goToIndex();
 }
-
 function openeyes(){
     document.getElementById("click-container-text").innerHTML = "It is pitch dark outside...";
     document.getElementById("click-container-answer").innerHTML = "<button class=\"Example\" onclick=\"opencurtain()\"> Open your curtain </button>";
@@ -29,3 +24,10 @@ function setgamestate(){
     gamestate = 2;
     goToIndex();
 }
+(function () {
+    gamestate = localStorage.getItem("gamestate");
+    gamestate = parseInt(gamestate);
+    if (gamestate > 1){
+        goToIndex();
+    }
+})();
