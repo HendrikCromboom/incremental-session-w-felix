@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title> 0 Souls</title>
@@ -13,8 +12,8 @@
             <p id="s">Your covent is harvesting 0 souls per second</p>
             <p>Sacrifice a Soul:</p>
             <br>
-            <a href= # onclick="add()"><img id="altar" src="sac.png"></a>
-            <p>You have appeased the strange creature's cravings with
+            <a href= # onclick="add()" id="linku"><img id="altar" src="sac.png"></a>
+            <p><span id="name"> </span>has appeased the strange creature's cravings with
             <input type="text" id="text" disabled value="0">
             souls.</p>
         </div>
@@ -49,7 +48,7 @@
             <div class="tabcontent" id="upgrades">
                 <button><a href="#" onclick="upgradeSacrifice()">Upgrade</a></button>
                 your sacrificial powers, for
-                <span id="costUpgradeSacrifice">10.000 Souls</span></p>
+                <p><span id="costUpgradeSacrifice">10.000 Souls</span></p>
                 <p id="amountSacrifice">Your sacrificial power is 1</p>
                 <br>
             </div>
@@ -65,4 +64,5 @@
             <button><a href="#" onclick="reset()">Reset</a></button>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>

@@ -13,7 +13,16 @@ function update(){
     document.getElementById("amountTotalLifeSoulCount").innerHTML = "During this life you have collected " + totallifesoulcount + " souls!";
     document.getElementById("amountClicks").innerHTML = "During this life you have clicked " + clicks + " times!";
     document.getElementById("amountLifeTime").innerHTML = "You have suffered this life for " + lifetime + " relative time units...";
+    document.getElementById("name").innerHTML = name + " ";
+
 }
+var bob = document.getElementById("linku");
+bob.onmouseover = function() {document.getElementById("altar").src =sac2;};
+bob.onmouseout = function() {document.getElementById("altar").src =sac;};
+
+var sac = "sac.png";
+var sac2 = "sac2.png";
+var name = localStorage.getItem("Name");
 var multiplier = 1;
 var soulcount = 0;
 var acolytes = 0;
