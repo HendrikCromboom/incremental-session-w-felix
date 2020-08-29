@@ -24,6 +24,13 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 
 #### Changelog
 
+29 aug 2020 init0.009
+
+* Added a secondary altar image on hover
+* Tutorial asks name
+* Name is displayed 
+* Counter text fix
+
 18 aug 2020 init0.008
 
 * Added a total souls stat
