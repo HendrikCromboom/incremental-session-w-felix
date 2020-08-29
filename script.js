@@ -19,7 +19,18 @@ function update(){
 var bob = document.getElementById("linku");
 bob.onmouseover = function() {document.getElementById("altar").src =sac2;};
 bob.onmouseout = function() {document.getElementById("altar").src =sac;};
+var theme = document.getElementById("theme")
+theme.onclick = function () {
+    document.body.style.backgroundColor = themeArrbg[themeState];
+    document.body.style.color = themeArrc[themeState];
+    if(themeState === 1){
+        themeState -= 1}
+    else
+    {themeState += 1}}
+var themeState = 0;
 
+var themeArrbg = ["white", "black"];
+var themeArrc = ["black", "white"];
 var sac = "sac.png";
 var sac2 = "sac2.png";
 var name = localStorage.getItem("Name");

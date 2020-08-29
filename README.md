@@ -30,6 +30,7 @@ https://hendrikcromboom.github.io/incremental-session-w-felix/
 * Tutorial asks name
 * Name is displayed 
 * Counter text fix
+* Added light/dark theme to stats
 
 18 aug 2020 init0.008
 
